@@ -1,3 +1,15 @@
+$(document).ready(function(){
+    $(".center").slick({
+        centerMode: true,
+        slidesToShow: 1,
+        arrows:false,
+        adaptiveHeight: true
+      });
+})
+
+
+
+
 //menu
 $('.btn_open').click(function(){
     $('.gnb').animate({left:'0'},200)
