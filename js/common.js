@@ -5,6 +5,9 @@ $(document).ready(function(){
         arrows:false,
         adaptiveHeight: true
       });
+    $(".rolling").slick({
+        autoplay:true
+      });
 })
 
 

@@ -13,6 +13,9 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 .wide{padding-left: 0; padding-right: 0;}
 .inner h2{text-align: left; font-size: 24px; margin-bottom: 50px;}
 .wide h2{padding-left: 20px;}
+.white{background: #fff;}
+.white h2{color: #333;}
+
 .bold{font-weight: 800;}
 .regular{font-weight: 600;}
 .red{color: #ff3f10;}
@@ -70,13 +73,21 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 #interview .answer img{float: right;}
 #interview .answer p{float: right; border-top-right-radius: 0; margin-top: 5px; line-height: 1.2em; font-size: 12px; }
 
+/* 한줄평 */
+#review .rolling{overflow: hidden; margin-bottom: 30px; position: relative;}/* rolling area */
+#review .rolling li{overflow: hidden; float: left; display: inline-block; margin-right: 20px;}
+#review .rolling li img{float: left; width: 50px; margin-right: 15px;}
+#review .rolling li p{float: left; font-size: 30px; font-weight: 600; position: relative;}
+#review .rolling li p span{font-size: 10px; font-weight: 300; position: absolute; right: 0; bottom: -15px;}
 
+/* 상영관 */
+#theater p{text-align: left; margin-bottom: 30px; line-height: 1.5em;}
 
-
-
-
-
-
+/* 땡스투 */
+#thanks p{color: #333; text-align: left;}
+#thanks p ~ p{margin-top: 20px; font-size: 11px;}
+#thanks span{margin-right: 3px;}
+#thanks .small{font-size: 10px}
 
 
 
