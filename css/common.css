@@ -8,7 +8,7 @@
 
 
 /*common*/
-html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 13px; line-height: 1; color: #fff; width: 100%; text-align: center; letter-spacing: -0.02em; background-color: #03091d;}
+html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 13px; line-height: 1; color: #fff; width: 100%; text-align: center; letter-spacing: -0.02em;}
 .inner{padding: 30px 20px; background-color: #03091d;}
 .wide{padding-left: 0; padding-right: 0;}
 .inner h2{text-align: left; font-size: 24px; margin-bottom: 50px;}
@@ -68,7 +68,7 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 #interview .smile p{float: left; margin-left: 10px; font-weight: 600;}
 
 #interview .answer{text-align: right; overflow: hidden;}
-#interview .answer span{font-size: 16px; line-height: 30px; margin-right: 5px; font-weight: 600; color: #e73b49; display: inline-block; min-width: 200px;}
+#interview .answer span{font-size: 16px; line-height: 30px; margin-right: 5px; font-weight: 600; color: #e73b49; display: inline-block; min-width: 203px;}
 #interview .answer.yong span{color: #09509f;}
 #interview .answer img{float: right;}
 #interview .answer p{float: right; border-top-right-radius: 0; margin-top: 5px; line-height: 1.2em; font-size: 12px; }
@@ -84,7 +84,7 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 #theater p{text-align: left; margin-bottom: 30px; line-height: 1.5em;}
 
 /* 땡스투 */
-#thanks p{color: #333; text-align: left;}
+#thanks p{color: #333; text-align: left; line-height: 2em;}
 #thanks p ~ p{margin-top: 20px; font-size: 11px;}
 #thanks span{margin-right: 3px;}
 #thanks .small{font-size: 10px}
