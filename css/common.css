@@ -8,8 +8,8 @@
 
 
 /*common*/
-html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 13px; line-height: 1; color: #fff; width: 100%; text-align: center; letter-spacing: -0.02em;}
-.inner{padding: 100px 20px 0 20px; background-color: #03091d;}
+html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 13px; line-height: 1; color: #fff; width: 100%; text-align: center; letter-spacing: -0.02em; background-color: #03091d;}
+.inner{padding: 30px 20px; background-color: #03091d;}
 .wide{padding-left: 0; padding-right: 0;}
 .inner h2{text-align: left; font-size: 24px; margin-bottom: 50px;}
 .wide h2{padding-left: 20px;}
@@ -17,10 +17,11 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 .regular{font-weight: 600;}
 .red{color: #ff3f10;}
 .green{color: #3c9742;}
+.small{font-size: 10px;}
 
 
-/*header*/
-#main{background-color: #03091d;}
+/* 메인 */
+#main{background-color: #03091d; padding-bottom: 30px;}
 #main .main_top{display: none;}
 #main .main_info{margin-top: -120px;}
 #main .main_info h1{display: inline-block; font-size: 40px; position: relative; margin-bottom: 35px; }
@@ -33,9 +34,10 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 #main .main_info .score{margin-top:10px;}
 #main .main_info .score li{margin: 0 8px;}
 #main .main_info .score .star{margin: 0 10px;}
-#main .main_info .synopsis{text-align: left; line-height: 1.5em; padding: 0 20px; margin-top: 50px; margin-bottom: 15px; overflow: hidden; height: 80px; }/* more 클릭 시 synopsis height값 100%; */
+#main .main_info .synopsis{text-align: left; line-height: 1.5em; padding: 0 20px; margin-top: 50px; margin-bottom: 15px; overflow: hidden; height: 78px; }/* more 클릭 시 synopsis height값 100%; */
 #main .more{border: 1px solid #fff; border-radius: 5px; display: block; padding: 15px; margin: 0 20px;}
 
+/* 등장인물 */
 #casting .inner{overflow: hidden;}
 #casting .inner > div{overflow: hidden;}
 #casting .inner > div:first-of-type{margin-bottom: 50px; }
@@ -45,13 +47,38 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 #casting .profile h3{font-size: 20px; font-weight: 600;}
 #casting .profile p{line-height: 1.4em;}
     
+/* 예고편 */
 #trailer h2{margin: 0; height: 40px; line-height: 40px; background: #000; margin-top: -1px;}
 #trailer .video_wrap{padding-bottom: 40px; background: #000;}
     
-#stillcut .slick-slide{margin: 0 10px; opacity: 0.5; transform: scale(0.9); transition: all .3s;}
+/* 스틸컷 */
+#stillcut .slick-slide{opacity: 0.5; transform: scale(0.9); transition: all .3s;}
 #stillcut .slick-current{opacity: 1; transform: scale(1);}
     
-    
+/* 인터뷰 */
+#interview .talk_wrap{background-color: #e4e4e4; border: 1px solid #fff; border-radius: 25px; overflow: hidden; color: #333; padding: 20px; }
+#interview .talk_wrap .talker ~ .talker{margin-top: 25px;}
+#interview .talk_wrap img{width: 30px;}
+#interview .talk_wrap p{background: #fff; display: inline-block; padding: 9px; border-radius: 25px;}
+#interview .smile{text-align: left; overflow: hidden;}
+#interview .smile img{float: left;}
+#interview .smile p{float: left; margin-left: 10px; font-weight: 600;}
+
+#interview .answer{text-align: right; overflow: hidden;}
+#interview .answer span{font-size: 16px; line-height: 30px; margin-right: 5px; font-weight: 600; color: #e73b49; display: inline-block; min-width: 200px;}
+#interview .answer.yong span{color: #09509f;}
+#interview .answer img{float: right;}
+#interview .answer p{float: right; border-top-right-radius: 0; margin-top: 5px; line-height: 1.2em; font-size: 12px; }
+
+
+
+
+
+
+
+
+
+
 
 
 
