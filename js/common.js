@@ -8,9 +8,9 @@ $(document).ready(function(){
     $('.more').click(function(){
         $(this).toggleClass('on');
         if($(this).hasClass('on')){
-            $('.more_txt').slideDown(200)
+            $('.more_txt').slideDown(300)
            }else{
-               $('.more_txt').slideUp(200)
+               $('.more_txt').slideUp(300)
            }
     });
 
