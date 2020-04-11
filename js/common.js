@@ -5,9 +5,15 @@ $(document).ready(function(){
         arrows:false,
         adaptiveHeight: true
       });
-    $(".rolling").slick({
-        autoplay:true
-      });
+    $('.more').click(function(){
+        $(this).toggleClass('on');
+        if($(this).hasClass('on')){
+            $('.more_txt').slideDown(200)
+           }else{
+               $('.more_txt').slideUp(200)
+           }
+    });
+
 })
 
 

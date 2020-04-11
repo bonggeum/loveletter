@@ -11,7 +11,7 @@
 html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 13px; line-height: 1; color: #fff; width: 100%; text-align: center; letter-spacing: -0.02em;}
 .inner{padding: 30px 20px; background-color: #03091d;}
 .wide{padding-left: 0; padding-right: 0;}
-.inner h2{text-align: left; font-size: 24px; margin-bottom: 50px;}
+.inner h2{text-align: left; font-size: 24px; margin-bottom: 20px;}
 .wide h2{padding-left: 20px;}
 .white{background: #fff;}
 .white h2{color: #333;}
@@ -21,7 +21,7 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 .red{color: #ff3f10;}
 .green{color: #3c9742;}
 .small{font-size: 10px;}
-
+.gray{color: #a9a9a9;}
 
 /* 메인 */
 #main{background-color: #03091d; padding-bottom: 30px;}
@@ -34,11 +34,15 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 #main .main_info .hashtag{margin-top: 30px; margin-bottom: 20px;}
 #main .main_info .hashtag li{display: inline-block; border: 1px solid #fff; border-radius: 100px; line-height: 1.6em; padding: 0 10px; margin: 0 5px; font-size: 12px;}
 #main .main_info .feature .ing{background: rgba(255,255,255,0.3); border-radius: 100px; padding: 0 10px;}
-#main .main_info .score{margin-top:10px;}
+#main .main_info .score{margin-top:10px; margin-bottom: 50px;}
 #main .main_info .score li{margin: 0 8px;}
 #main .main_info .score .star{margin: 0 10px;}
-#main .main_info .synopsis{text-align: left; line-height: 1.5em; padding: 0 20px; margin-top: 50px; margin-bottom: 15px; overflow: hidden; height: 78px; }/* more 클릭 시 synopsis height값 100%; */
-#main .more{border: 1px solid #fff; border-radius: 5px; display: block; padding: 15px; margin: 0 20px;}
+#main .main_info .synopsis{text-align: left; line-height: 1.5em; padding: 0 20px;}
+#main .main_info .more_txt{text-align: left; line-height: 1.5em; padding: 0 20px; display: none;}
+#main .more{border: 1px solid #fff; border-radius: 5px; display: block; padding: 20px; margin: 0 20px; margin-top: 20px; position: relative;}
+#main .more:after{display: block; content: '더보기'; color: #fff; position: absolute; left: 0; right: 0; margin: 0 auto; top: 50%; transform: translateY(-50%);}
+#main .more.on:after{content: '닫기';}
+#main .main_info .more_detail{border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 10px 0; line-height: 2em;}
 
 /* 등장인물 */
 #casting .inner{overflow: hidden;}
@@ -55,8 +59,8 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 #trailer .video_wrap{padding-bottom: 40px; background: #000;}
     
 /* 스틸컷 */
-#stillcut .slick-slide{opacity: 0.5; transform: scale(0.9); transition: all .3s;}
-#stillcut .slick-current{opacity: 1; transform: scale(1);}
+#stillcut .slick-slide{transform: scale(0.9); transition: all .3s;}
+#stillcut .slick-current{transform: scale(1);}
     
 /* 인터뷰 */
 #interview .talk_wrap{background-color: #e4e4e4; border: 1px solid #fff; border-radius: 25px; overflow: hidden; color: #333; padding: 20px; }
@@ -64,6 +68,7 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 #interview .talk_wrap img{width: 30px;}
 #interview .talk_wrap p{background: #fff; display: inline-block; padding: 9px; border-radius: 25px;}
 #interview .smile{text-align: left; overflow: hidden;}
+#interview .smile ~ .smile{padding-top: 15px;}
 #interview .smile img{float: left;}
 #interview .smile p{float: left; margin-left: 10px; font-weight: 600;}
 
@@ -71,20 +76,21 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 #interview .answer span{font-size: 16px; line-height: 30px; margin-right: 5px; font-weight: 600; color: #e73b49; display: inline-block; min-width: 203px;}
 #interview .answer.yong span{color: #09509f;}
 #interview .answer img{float: right;}
-#interview .answer p{float: right; border-top-right-radius: 0; margin-top: 5px; line-height: 1.2em; font-size: 12px; }
+#interview .answer p{float: right; border-top-right-radius: 0; margin-top: 5px; line-height: 1.2em;}
 
 /* 한줄평 */
-#review .rolling{overflow: hidden; margin-bottom: 30px; position: relative;}/* rolling area */
-#review .rolling li{overflow: hidden; float: left; display: inline-block; margin-right: 20px;}
+#review .inner{width: 100%; overflow: hidden;}
+#review .rolling{overflow: hidden; position: relative; width: 300%}/* rolling area */
+#review .rolling li{overflow: hidden; float: left; display: inline-block; margin-right: 20px; padding-bottom: 15px;}
 #review .rolling li img{float: left; width: 50px; margin-right: 15px;}
-#review .rolling li p{float: left; font-size: 30px; font-weight: 600; position: relative;}
-#review .rolling li p span{font-size: 10px; font-weight: 300; position: absolute; right: 0; bottom: -15px;}
+#review .rolling li p{float: left; font-size: 40px; line-height: 45px; font-weight: 600; position: relative;}
+#review .rolling li p span{font-size: 10px; font-weight: 300; position: absolute; right: 0; bottom: -30px;}
 
 /* 상영관 */
 #theater p{text-align: left; margin-bottom: 30px; line-height: 1.5em;}
 
 /* 땡스투 */
-#thanks p{color: #333; text-align: left; line-height: 2em;}
+#thanks p{color: #333; text-align: left; line-height: 1.5em;}
 #thanks p ~ p{margin-top: 20px; font-size: 11px;}
 #thanks span{margin-right: 3px;}
 #thanks .small{font-size: 10px}
