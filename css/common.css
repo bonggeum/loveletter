@@ -8,7 +8,7 @@
 
 
 /*common*/
-html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 13px; line-height: 1; color: #fff; width: 100%; text-align: center; letter-spacing: -0.02em;}
+html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 13px; line-height: 1; color: #fff; width: 100%; text-align: center; letter-spacing: -0.02em; }
 .inner{padding: 30px 20px; background-color: #03091d;}
 .wide{padding-left: 0; padding-right: 0;}
 .inner h2{text-align: left; font-size: 24px; margin-bottom: 20px;}
@@ -48,21 +48,23 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 #casting .inner{overflow: hidden;}
 #casting .inner > div{overflow: hidden;}
 #casting .inner > div:first-of-type{margin-bottom: 50px; }
-#casting .img{width:52%; border-radius: 50%; overflow: hidden; float: left;}
+#casting .img{width:52%; border-radius: 50%; overflow: hidden; float: left; display: inline-block;}
 #casting .img img{display: block;}
 #casting .profile{width: 48%; text-align: left; display: inline-block; padding-left: 10px;}
 #casting .profile h3{font-size: 20px; font-weight: 600;}
 #casting .profile p{line-height: 1.4em;}
-    
+.story{display: none; background: rgba(255,255,255,0.95); padding: 20px; box-sizing: border-box; text-align: left; color: #333; margin: 0 20px 0 10px; border-radius: 25px;}    
+
 /* 예고편 */
 #trailer h2{margin: 0; height: 40px; line-height: 40px; background: #000; margin-top: -1px;}
 #trailer .video_wrap{ background: #000; position: relative; width: 100%; padding-top: 70%;}
 #trailer .video_wrap iframe{width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
     
 /* 스틸컷 */
-#stillcut .slick-slide{transform: scale(0.9); transition: all .3s;}
+#stillcut .slick-slide{transform: scale(0.95); transition: all .3s; margin: 0 10px;}
 #stillcut .slick-current{transform: scale(1);}
-    
+#stillcut .like{display: inline; color: #fff; text-align: right; font-size: 12px; margin-top: 10px;}
+
 /* 인터뷰 */
 #interview .talk_wrap{background-color: #e4e4e4; border: 1px solid #fff; border-radius: 25px; overflow: hidden; color: #333; padding: 20px; }
 #interview .talk_wrap .talker ~ .talker{margin-top: 25px;}
