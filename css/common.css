@@ -8,7 +8,7 @@
 
 
 /*common*/
-html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 13px; line-height: 1; color: #fff; width: 100%; text-align: center; letter-spacing: -0.02em; }
+html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 14px; line-height: 1; color: #fff; width: 100%; text-align: center; letter-spacing: -0.02em; }
 .inner{padding: 30px 20px; background-color: #03091d;}
 .wide{padding-left: 0; padding-right: 0;}
 .inner h2{text-align: left; font-size: 24px; margin-bottom: 20px;}
@@ -34,7 +34,7 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 #main .main_info .hashtag{margin-top: 30px; margin-bottom: 20px;}
 #main .main_info .hashtag li{display: inline-block; border: 1px solid #fff; border-radius: 100px; line-height: 1.6em; padding: 0 10px; margin: 0 5px; font-size: 12px;}
 #main .main_info .feature .ing{background: rgba(255,255,255,0.3); border-radius: 100px; padding: 0 10px;}
-#main .main_info .score{margin-top:10px; margin-bottom: 50px;}
+#main .main_info .score{margin-top:10px; margin-bottom: 30px;}
 #main .main_info .score li{margin: 0 8px;}
 #main .main_info .score .star{margin: 0 10px;}
 #main .main_info .synopsis{text-align: left; line-height: 1.5em; padding: 0 20px;}
@@ -53,7 +53,7 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 #casting .profile{width: 48%; text-align: left; display: inline-block; padding-left: 10px;}
 #casting .profile h3{font-size: 20px; font-weight: 600;}
 #casting .profile p{line-height: 1.4em;}
-.story{display: none; background: rgba(255,255,255,0.95); padding: 20px; box-sizing: border-box; text-align: left; color: #333; margin: 0 20px 0 10px; border-radius: 25px;}    
+.story{display: none; background: rgba(255,255,255,0.95); padding: 20px; box-sizing: border-box; text-align: left; color: #333; margin: 0 20px; border-radius: 25px; line-height: 1.5em;}    
 
 /* 예고편 */
 #trailer h2{margin: 0; height: 40px; line-height: 40px; background: #000; margin-top: -1px;}
@@ -63,7 +63,9 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 /* 스틸컷 */
 #stillcut .slick-slide{transform: scale(0.95); transition: all .3s; margin: 0 10px;}
 #stillcut .slick-current{transform: scale(1);}
-#stillcut .like{display: inline; color: #fff; text-align: right; font-size: 12px; margin-top: 10px;}
+#stillcut .like{width: 20px; height: 19px; display: block; background: url(../images/icon_like_off.png) no-repeat center top; background-size: cover; margin: 10px; }
+#stillcut .like.on{background-image: url(../images/icon_like_on.png);}
+
 
 /* 인터뷰 */
 #interview .talk_wrap{background-color: #e4e4e4; border: 1px solid #fff; border-radius: 25px; overflow: hidden; color: #333; padding: 20px; }
@@ -91,6 +93,13 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 
 /* 상영관 */
 #theater p{text-align: left; margin-bottom: 30px; line-height: 1.5em;}
+#theater #map{width: 100%; height: 250px; }
+#theater #map .map_info{color: #333}
+#theater #map .map_name{color: #333; font-size: 15px; font-weight: bold;}
+#theater #map .map_address{color: #333;}
+
+#theater #map .map_tel{color: #333;}
+#theater iframe{width: 100%; height: 250px;}
 
 /* 땡스투 */
 #thanks p{color: #333; text-align: left; line-height: 1.5em;}

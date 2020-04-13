@@ -1,10 +1,7 @@
 $(document).ready(function(){
-    $(".center").slick({
-        centerMode: true,
-        slidesToShow: 1,
-        arrows:false,
-        adaptiveHeight: true
-      });
+    
+    
+    //더보기
     $('.more').click(function(){
         $(this).toggleClass('on');
         if($(this).hasClass('on')){
@@ -14,11 +11,29 @@ $(document).ready(function(){
            }
     });
     
-    $('#casting .img').click(function(){
-        $(this).next('.story').bPopup({});
+    //팝업
+    $('#casting .btn_pop1').click(function(){
+        $('.story1').bPopup({
+            transition: 'slideDown'
+        });
+    });
+    $('#casting .btn_pop2').click(function(){
+        $('.story2').bPopup({
+            transition: 'slideDown'
+        });
     });
 
-
+    //스틸컷
+    $(".center").slick({
+        centerMode: true,
+        slidesToShow: 1,
+        arrows:false,
+        adaptiveHeight: true
+      });
+    
+    $('#stillcut .like').click(function(){
+       $(this).toggleClass('on'); 
+    });
     
 
 })
