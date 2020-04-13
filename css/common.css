@@ -8,7 +8,7 @@
 
 
 /*common*/
-html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 14px; line-height: 1; color: #fff; width: 100%; text-align: center; letter-spacing: -0.02em; }
+html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 15px; line-height: 1; color: #fff; width: 100%; text-align: center; letter-spacing: -0.02em; }
 .inner{padding: 30px 20px; background-color: #03091d;}
 .wide{padding-left: 0; padding-right: 0;}
 .inner h2{text-align: left; font-size: 24px; margin-bottom: 20px;}
@@ -93,12 +93,6 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 
 /* 상영관 */
 #theater p{text-align: left; margin-bottom: 30px; line-height: 1.5em;}
-#theater #map{width: 100%; height: 250px; }
-#theater #map .map_info{color: #333}
-#theater #map .map_name{color: #333; font-size: 15px; font-weight: bold;}
-#theater #map .map_address{color: #333;}
-
-#theater #map .map_tel{color: #333;}
 #theater iframe{width: 100%; height: 250px;}
 
 /* 땡스투 */
