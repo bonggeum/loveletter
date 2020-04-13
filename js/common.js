@@ -13,14 +13,10 @@ $(document).ready(function(){
     
     //팝업
     $('#casting .btn_pop1').click(function(){
-        $('.story1').bPopup({
-            transition: 'slideDown'
-        });
+        $('.story1').bPopup();
     });
     $('#casting .btn_pop2').click(function(){
-        $('.story2').bPopup({
-            transition: 'slideDown'
-        });
+        $('.story2').bPopup();
     });
 
     //스틸컷

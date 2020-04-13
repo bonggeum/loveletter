@@ -81,7 +81,7 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 #interview .answer span{font-size: 16px; line-height: 30px; margin-right: 5px; font-weight: 600; color: #e73b49; display: inline-block; min-width: 203px;}
 #interview .answer.yong span{color: #09509f;}
 #interview .answer img{float: right;}
-#interview .answer p{float: right; border-top-right-radius: 0; margin-top: 5px; line-height: 1.2em;}
+#interview .answer p{float: right; border-top-right-radius: 0; margin-top: 5px; line-height: 1.4em;}
 
 /* 한줄평 */
 #review .inner{width: 100%; overflow: hidden;}
