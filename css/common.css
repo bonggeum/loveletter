@@ -8,7 +8,7 @@
 
 
 /*common*/
-html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 15px; line-height: 1; color: #fff; width: 100%; text-align: center; letter-spacing: -0.02em; }
+html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 15px; line-height: 1; color: #fff; width: 100%; max-width: 640px; margin: 0 auto; background: #03091d; text-align: center; letter-spacing: -0.02em; }
 .inner{padding: 30px 20px; background-color: #03091d;}
 .wide{padding-left: 0; padding-right: 0;}
 .inner h2{text-align: left; font-size: 24px; margin-bottom: 20px;}
@@ -24,14 +24,13 @@ html,body{font-family: 'Nanum Gothic', sans-serif; font-weight: 300; font-size: 
 .gray{color: #a9a9a9;}
 
 /* 메인 */
-#main{background-color: #03091d; padding-bottom: 30px;}
+#main{background-color: #03091d; padding-bottom: 30px; position: relative;}
 #main .main_conpetti img{position: absolute;}
 #main .main_conpetti img:nth-of-type(1){bottom: 55%; left: 3%; animation: move_item1 4s ease-in-out infinite;}
 #main .main_conpetti img:nth-of-type(2){top: 13%; right: 0; animation: move_item2 4s ease-in-out infinite; width: 100px;}
 #main .main_conpetti img:nth-of-type(3){top: 10%; left: 0; animation: move_item2 4s ease-in-out infinite; width: 100px;}
 #main .main_conpetti img:nth-of-type(4){top: 3%; right: 5%; animation: move_item1 4s ease-in-out infinite;}
 #main .main_conpetti img:nth-of-type(5){top: 5%; left: 15%; animation: move_item1 4s ease-in-out infinite;}
-#main .main_conpetti img:nth-of-type(6){top: 20%; left: 45%; animation: move_item2 4s ease-in-out infinite;}
 
 
 #main .main_top{display: none;}
