@@ -18,6 +18,16 @@ $(document).ready(function(){
     $('#casting .btn_pop2').click(function(){
         $('.story2').bPopup();
     });
+    
+    //예고편
+    //video slide
+    $('.video_wrap').slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 1000,
+          arrows: true,
+    });
 
     //스틸컷
     $(".center").slick({
@@ -25,11 +35,12 @@ $(document).ready(function(){
         slidesToShow: 1,
         arrows:false,
         adaptiveHeight: true
-      });
+    });
     
     $('#stillcut .like').click(function(){
        $(this).toggleClass('on'); 
     });
     
-
+    //wow
+    new WOW().init();
 })
